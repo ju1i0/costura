@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<title>
+			SJ Profissional
+		</title>
+		<script src="js/jquery.js"></script>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="estilo/logo.css"/>
+		<link rel="stylesheet" type="text/css" href="estilo/body.1.css"/>
+		<link rel="stylesheet" type="text/css" href="estilo/animations.css"/>
+		
+	</head>
+	<body>
+		<div id="top">
+			<img class="opc" src="opc.png"/>
+			<img class="img" src="logoasas3.png"/><br/>
+			<div id="comentario">
+				<span class="azul">S.J </span><span class="cinza">criando </span><span class="laranja">asas </span>
+				<span class="cinza">para sua vida profissional</span>
+			</div>
+		</div>
+		<div id="left-bar">
+			<a href="#inputd">Dar um Up agora na sua vida profissional</a>>
+		</div>
+		<div id="infs">
+			<div id="sobre" class="a">
+				S.J eh uma empresa que oferece cursos de corte e costura
+				e infelizmente ensina apenas em Natal - RN, com o intuito
+				de elevar a sua vida profissional. veja <a href="sobre/">sobre</a>.
+			</div>
+
+			<div id="sobre" class="b" style="margin-top:15px;">
+				Oferecemos cursos de corte e costura operacional e profissional
+				para dar um Up na sua vida profissional.
+			</div>
+			<div id="sobre" class="c" style="margin-top:15px;">
+				Filial da guararapes empresa de alta producao na area da costura
+			</div>
+		</div>
+		<div id="inputd">
+			<h1>participe deste progresso</h1>
+
+			<form action="input" name="input" method="get">
+				<label for="#nome">Digite seu nome</label><br/>
+				<input id="nome"name="nome"type="text"tabindex="1"placeholder="digite seu nome"/><br/>
+				<label for="#email">Digite seu email valido</label><br/>
+				<input id="email"name="email"type="email"tabindex="1"placeholder="digite seu email"/><br/>
+				<label for="#curso">Escolha o curso que voce quer fazer</label><br/>
+				<select id="curso"tabindex="1"size="1">
+					<option value="operacional">Corte e costura operacional</option>
+					<option value="profissional">Corte e costura profissional</option>
+				</select>
+				<input type="submit" value="Enviar"/>
+			</form>
+		</div>
+
+		<script>
+			$(".opc").hide();
+			$("#infs").click(function(){
+				$(".a").hide("0");
+				$(".b").hide("100");
+				$(".c").hide("200");
+				$(".opc").show("100");
+				$("#inputd").css({marginTop:"300px"});
+			});
+			$(".opc").click(function(){
+				$(".a").show("0");
+				$(".b").show("100");
+				$(".c").show("200");
+				$(".opc").hide("100");
+				$("#inputd").css({marginTop:"15px"});
+			});
+		</script>
+	</body>
+</html>

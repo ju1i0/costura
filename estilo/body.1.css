@@ -1,0 +1,32 @@
+a{
+	color:orange;
+	text-decoration: none;
+}
+body{
+	background-color:#ddd;
+}
+#left-bar{
+	z-index:3;
+	position:fixed;
+	left:0;
+	background-color: #fff;
+	top:25%;
+}
+#sobre{
+	animation-name:opacity;
+	animation-duration:1s;
+	margin-top:20%;
+	margin-left: 30%;
+	color:#fff;
+	background-color:rgba(10,10,10,0.70);
+	width:40%;
+	border-radius:5px;
+	box-shadow: -5px 10px 0px rgba(0,0,0,0.70);
+}
+#inputd{
+	margin-top: 15px;
+	text-align:center;
+	color: #fff;
+	border-top:2px rgb(185,117,87) dashed;
+	background-color:#4da;
+}

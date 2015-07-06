@@ -1,0 +1,49 @@
+@font-face{
+	font-family: "segoeuil";
+	src:url("segoeuil.ttf");
+}
+*{
+	font-family: "segoeuil";
+}
+.img{
+	margin-left:42%;
+	width:200px;
+}
+#comentario{
+	animation-name:comentario;
+	animation-duration:0.50s;
+}
+.azul{
+	color:#4df;
+	font-family: "segoeuil";
+	font-weight: bold;
+	margin-left: 35%;
+	font-size: 20px;
+}
+.cinza{
+	color:#666;
+	font-size: 18px;
+}
+.laranja{
+	color: orange;
+	font-size: 18px;
+}
+#top{
+	background-color: #fff;
+	position:fixed;
+	top:-0;
+	left:-0;
+	right:-0;
+	height: 25%;
+}
+.opc{
+	width: 90px;
+	height: 80px;
+	float:left;
+}
+@media screen and(orientation:portrait){
+	.img{
+		margin-left:0;
+		width:100px;
+	}
+}

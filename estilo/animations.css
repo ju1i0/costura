@@ -1,0 +1,18 @@
+@keyframes comentario{
+	from{
+		margin-top:50px;
+		opacity:0.10;
+	}
+	to{
+		margin-top:0px;
+		opacity:1;
+	}
+}
+@keyframes opacity{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:100;
+	}
+}
